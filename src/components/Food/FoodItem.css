@@ -1,0 +1,43 @@
+.item {
+    text-align: center;
+    padding: 2em;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.item img {
+    width: 240px;
+    height: auto;
+}
+
+.content_text {
+    padding: 2em;
+}
+
+
+.content_text h1 {
+    font-size: 2em;
+    color: #303030;
+}
+
+.content_text p {
+    font-size: 1.3em;
+    color: #4b4a4a;
+}
+
+.btn {
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    color: rgb(0, 94, 255);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}

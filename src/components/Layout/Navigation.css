@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+
+.header img {
+    width: 260px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.menu li a {
+    font-size: 20px;
+    color: #303030;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: orange;
+    transition: 0.3s;
+    padding-bottom: 12px;
+    border-bottom: 2px solid orange;
+}
+
+.cart {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.cart .sp {
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    top: 14px;
+    left: 12px;
+    z-index: -2;
+    text-align: center;
+}
+
+@media (max-width: 533px) {
+    .menu {
+        margin-left: -80px;
+        margin-right: 80px;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .menu li:nth-child(1),
+    .menu li:nth-child(2) {
+        display: none;
+
+    }
+
+    .header img {
+        width: 180px;
+    }
+
+}

@@ -1,0 +1,23 @@
+.card {
+    background: rgba(255, 218, 175, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 30px;
+    animation: list 0.8s linear;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+@keyframes list {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 2;
+    }
+
+}
