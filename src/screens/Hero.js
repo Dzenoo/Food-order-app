@@ -18,7 +18,7 @@ const Hero = () => {
     const newCategory = Data.filter((foItem) => {
       return foItem.category === foodCategory;
     });
-    setData(filter);
+    setData(newCategory);
   };
 
   return (
