@@ -14,8 +14,8 @@ const Hero = () => {
 
   const [data, setData] = useState(Data);
 
-  const filterProject = (foodCategory) => {
-    const filter = Data.filter((foItem) => {
+  const categoryHandler = (foodCategory) => {
+    const newCategory = Data.filter((foItem) => {
       return foItem.category === foodCategory;
     });
     setData(filter);
@@ -51,10 +51,10 @@ const Hero = () => {
           <span className="span">Specialities </span>
         </h1>
         <div className="categories">
-          <button onClick={() => filterProject("Pizza")}>Pizza</button>
-          <button onClick={() => filterProject("Fruit")}>Fruit</button>
-          <button onClick={() => filterProject("Coffe")}>Coffe</button>
-          <button onClick={() => filterProject("Salad")}>Salad</button>
+          <button onClick={() => categoryHandler("Pizza")}>Pizza</button>
+          <button onClick={() => categoryHandler("Fruit")}>Fruit</button>
+          <button onClick={() => categoryHandler("Coffe")}>Coffe</button>
+          <button onClick={() => categoryHandler("Salad")}>Salad</button>
         </div>
         <FoodList data={data} />
       </div>
