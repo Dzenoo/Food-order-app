@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 
 function App() {
   const cartItems = useSelector((state) => state.cart.items);
-
   const submitOrderHandler = async (enteredData) => {
     await fetch(
       "https://foodor-1810c-default-rtdb.firebaseio.com/orders.json",
